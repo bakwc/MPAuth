@@ -1,0 +1,26 @@
+
+MPAuth - module for ping authorisation.
+It keeps specified port closed until ping request received.
+
+
+      Requirements:
+
+ - gcc
+ - make
+ - linux kernel sources
+
+
+      Using:
+
+ - ./configure
+ - make
+ - sudo insmod mpauth.ko filterPort=22 pingPass=123
+
+  filterPort	- port to filter
+  pingPass	- ping size
+
+To open port you need to send ping with specified size, e.g.:
+
+  ping your_server -s 123
+
+And you'll have 30 seconds to connect

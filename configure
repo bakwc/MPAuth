@@ -1,0 +1,18 @@
+#!/bin/sh
+
+echo "You need gcc, make and kernel headers to build mpauth"
+
+echo -n "Input kernel headers directory: "
+read headers
+
+testfile=$headers/Makefile
+
+if [ -e "$testfile" ]
+then
+  rm -rf Makefile
+  echo "headers=$headers" >> Makefile
+  cat Makefile.in >> Makefile
+  echo "Configuration completed!"
+else
+  echo "ERROR: Kernel headers not found!"
+fi
