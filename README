@@ -1,5 +1,4 @@
-
-MPAuth - module for ping authorisation.
+MPAuth - module for ping authorization.
 It keeps specified port closed until ping request received.
 
 
