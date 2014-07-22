@@ -38,7 +38,7 @@ static __kernel_time_t allowedTime;
 module_param(pingPass, int, S_IRUSR);
 module_param(filterPort, int, S_IRUSR);
 
-unsigned int intercept(unsigned hooknum,
+unsigned int intercept(const struct nf_hook_ops* ops,
                        struct sk_buff* skb,
                        const struct net_device* in,
                        const struct net_device* out,
