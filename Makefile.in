@@ -1,8 +1,0 @@
-
-obj-m += mpauth.o
-
-all:
-	make -C $(headers) M=$(PWD) modules
-
-clean:
-	rm -f *.symvers *~ *mod.c *.o *.order *.ko

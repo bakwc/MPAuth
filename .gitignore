@@ -1,0 +1,13 @@
+*.creator
+*.user
+*.files
+*.includes
+*.config
+*.o
+*.ko
+*.order
+*.mod.c
+*.symvers
+*.a
+*.cmd
+*.tmp_versions/
